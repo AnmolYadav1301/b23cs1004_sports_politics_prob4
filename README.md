@@ -95,3 +95,25 @@ Run the dataset generation script:
 
 ```bash
 python3 generate_dataset.py
+
+This will crawl Wikipedia, filter relevant articles, extract sentences, and save the dataset as:
+
+dataset_title_filtered.csv
+
+### Step 2: Train & Use Classifier
+
+Run the classifier script:
+
+
+```bash
+python3 b23cs1004_classifier.py
+
+
+The script will train the best-performing model if not already saved.
+
+Once loaded, you can type any sentence and the model will predict:
+
+SPORTS 🏆
+POLITICS 🏛
+
+Type exit to quit the interactive mode.
